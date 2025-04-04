@@ -73,6 +73,25 @@
   background-repeat: no-repeat;
   color: #333;
 }
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
   </style>
 </head>
 <body>
@@ -104,11 +123,28 @@
     </div>
   </section>
 
+
   <section>
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:Coltellagabrielech@icolud.com">Coltellagabrielech@icolud.com</a></p>
     <p>Phone: +44 1234 567890</p>
   </section>
+
+
+    <section>
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <a href="gallery/lavoro1.jpg" target="_blank">
+      <img src="gallery/lavoro1.jpg" alt="Garden Project 1" />
+    </a>
+    <a href="gallery/lavoro2.jpg" target="_blank">
+      <img src="gallery/lavoro2.jpg" alt="Garden Project 2" />
+    </a>
+    <a href="gallery/lavoro3.jpg" target="_blank">
+      <img src="gallery/lavoro3.jpg" alt="Garden Project 3" />
+    </a>
+  </div>
+</section>
 
   <footer>
     &copy; 2025 Gardens GNG. All rights reserved.
